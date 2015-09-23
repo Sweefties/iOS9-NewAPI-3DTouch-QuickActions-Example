@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		7EED38331BB23EE4006520C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED38321BB23EE4006520C2 /* AppDelegate.swift */; };
-		7EED38351BB23EE4006520C2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED38341BB23EE4006520C2 /* FirstViewController.swift */; };
-		7EED38371BB23EE4006520C2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED38361BB23EE4006520C2 /* SecondViewController.swift */; };
 		7EED383A1BB23EE4006520C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EED38381BB23EE4006520C2 /* Main.storyboard */; };
 		7EED383C1BB23EE4006520C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EED383B1BB23EE4006520C2 /* Assets.xcassets */; };
 		7EED383F1BB23EE4006520C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EED383D1BB23EE4006520C2 /* LaunchScreen.storyboard */; };
+		7EED384B1BB23F5C006520C2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED384A1BB23F5C006520C2 /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7EED384D1BB23F88006520C2 /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED384C1BB23F88006520C2 /* MoviesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7EED384F1BB23FA5006520C2 /* SharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED384E1BB23FA5006520C2 /* SharingViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7EED38511BB23FB9006520C2 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED38501BB23FB9006520C2 /* MessageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7EED382F1BB23EE4006520C2 /* iOS9-NewAPI-3DTouch-QuickActions-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS9-NewAPI-3DTouch-QuickActions-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EED38321BB23EE4006520C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7EED38341BB23EE4006520C2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		7EED38361BB23EE4006520C2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		7EED38391BB23EE4006520C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7EED383B1BB23EE4006520C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EED383E1BB23EE4006520C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EED38401BB23EE4006520C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EED384A1BB23F5C006520C2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = App/Controllers/HomeViewController.swift; sourceTree = "<group>"; };
+		7EED384C1BB23F88006520C2 /* MoviesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoviesTableViewController.swift; path = App/Controllers/MoviesTableViewController.swift; sourceTree = "<group>"; };
+		7EED384E1BB23FA5006520C2 /* SharingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SharingViewController.swift; path = App/Controllers/SharingViewController.swift; sourceTree = "<group>"; };
+		7EED38501BB23FB9006520C2 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageViewController.swift; path = App/Controllers/MessageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		7EED38311BB23EE4006520C2 /* iOS9-NewAPI-3DTouch-QuickActions-Example */ = {
 			isa = PBXGroup;
 			children = (
+				7EED38461BB23EF7006520C2 /* App */,
+			);
+			path = "iOS9-NewAPI-3DTouch-QuickActions-Example";
+			sourceTree = "<group>";
+		};
+		7EED38461BB23EF7006520C2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7EED38471BB23F04006520C2 /* Root */,
+				7EED38481BB23F0A006520C2 /* Controllers */,
+				7EED38491BB23F18006520C2 /* Ressources */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		7EED38471BB23F04006520C2 /* Root */ = {
+			isa = PBXGroup;
+			children = (
 				7EED38321BB23EE4006520C2 /* AppDelegate.swift */,
-				7EED38341BB23EE4006520C2 /* FirstViewController.swift */,
-				7EED38361BB23EE4006520C2 /* SecondViewController.swift */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		7EED38481BB23F0A006520C2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7EED384A1BB23F5C006520C2 /* HomeViewController.swift */,
+				7EED384C1BB23F88006520C2 /* MoviesTableViewController.swift */,
+				7EED384E1BB23FA5006520C2 /* SharingViewController.swift */,
+				7EED38501BB23FB9006520C2 /* MessageViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		7EED38491BB23F18006520C2 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
 				7EED38381BB23EE4006520C2 /* Main.storyboard */,
 				7EED383B1BB23EE4006520C2 /* Assets.xcassets */,
 				7EED383D1BB23EE4006520C2 /* LaunchScreen.storyboard */,
 				7EED38401BB23EE4006520C2 /* Info.plist */,
 			);
-			path = "iOS9-NewAPI-3DTouch-QuickActions-Example";
+			name = Ressources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EED38371BB23EE4006520C2 /* SecondViewController.swift in Sources */,
 				7EED38331BB23EE4006520C2 /* AppDelegate.swift in Sources */,
-				7EED38351BB23EE4006520C2 /* FirstViewController.swift in Sources */,
+				7EED384D1BB23F88006520C2 /* MoviesTableViewController.swift in Sources */,
+				7EED384B1BB23F5C006520C2 /* HomeViewController.swift in Sources */,
+				7EED384F1BB23FA5006520C2 /* SharingViewController.swift in Sources */,
+				7EED38511BB23FB9006520C2 /* MessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +329,7 @@
 				7EED38451BB23EE4006520C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
