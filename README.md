@@ -72,6 +72,6 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 
 - Build and Run!
 - Switch to Home screen
-- Simulator : ![SBShortcutMenuSimulator](https://github.com/DeskConnect/SBShortcutMenuSimulator)
+- Simulator : [SBShortcutMenuSimulator](https://github.com/DeskConnect/SBShortcutMenuSimulator)
 - CAUTION! : make sure to uninstalled it after test!
 - Devices : with future iPhone 6s and others 3DTouch devices!
