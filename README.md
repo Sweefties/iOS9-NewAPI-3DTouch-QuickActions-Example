@@ -21,6 +21,11 @@ iOS 9~ Experiments - New API Components - Shortcut Quick Action API with 3DTouch
 Tested on iOS 9.0 Simulators iPhone 6S, 6S Plus.
 
 
+## Important
+
+Get the `master` branch for XCode 8 / Swift 3 updated project.
+
+
 ## Configure your app Info Targets
 
 
