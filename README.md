@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/build-pass-brightgreen.svg?style=flat-square)
 ![](https://img.shields.io/badge/platform-iOS9+-ff69b4.svg?style=flat-square)
-![](https://img.shields.io/badge/Require-XCode7-lightgrey.svg?style=flat-square)
+![](https://img.shields.io/badge/Require-XCode8-lightgrey.svg?style=flat-square)
 
 
 # iOS 9 - New API - 3DTouch - Quick Actions Example
@@ -13,12 +13,16 @@ iOS 9~ Experiments - New API Components - Shortcut Quick Action API with 3DTouch
 
 ## Requirements
 
-- >= XCode 7.0
-- >= Swift 2.
+- >= XCode 8.0
+- >= Swift 3.
 - >= iOS 9.0.
 - >= 3DTouch Devices.
 
-Tested on iOS 9.0 Simulators iPhone 6S, 6S Plus.
+Tested on iOS 9.0, iOS 10 Simulators iPhone 6S, 6S Plus, 7.
+
+## Important
+
+this is the Xcode 8 / Swift updated project.
 
 
 ## Configure your app Info Targets

@@ -17,11 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /// Define Home screen static (or dynamic..) quick actions - highly recommanded
     static let applicationShortcutUserInfoIconKey = "applicationShortcutUserInfoIconKey"
     
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // set if app launched from shorcut with boolean
         var appLaunchedFromShortCut = false
         // check current shortcut item
-        if let currentShorcutItem = launchOptions?[UIApplicationLaunchOptionsShortcutItemKey] as? UIApplicationShortcutItem {
+        if let currentShorcutItem = launchOptions?[UIApplicationLaunchOptionsKey.shortcutItem] as? UIApplicationShortcutItem {
             appLaunchedFromShortCut = true
             QuickActionsForItem(currentShorcutItem)
         }
@@ -29,23 +29,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return !appLaunchedFromShortCut
     }
 
-    func applicationWillResignActive(application: UIApplication) {
+    func applicationWillResignActive(_ application: UIApplication) {
         //..
     }
 
-    func applicationDidEnterBackground(application: UIApplication) {
+    func applicationDidEnterBackground(_ application: UIApplication) {
         //..
     }
 
-    func applicationWillEnterForeground(application: UIApplication) {
+    func applicationWillEnterForeground(_ application: UIApplication) {
         //..
     }
 
-    func applicationDidBecomeActive(application: UIApplication) {
+    func applicationDidBecomeActive(_ application: UIApplication) {
         //..
     }
 
-    func applicationWillTerminate(application: UIApplication) {
+    func applicationWillTerminate(_ application: UIApplication) {
         //..
     }
 
@@ -65,7 +65,7 @@ extension HandleForShorCutItem {
     }
     
     /// Shortcut Item, also called a Home screen dynamic quick action, specifies a user-initiated action for app.
-    func QuickActionsForItem(shortcutItem: UIApplicationShortcutItem) -> Bool {
+    func QuickActionsForItem(_ shortcutItem: UIApplicationShortcutItem) -> Bool {
         // set handled boolean
         var isHandled = false
         
@@ -76,7 +76,7 @@ extension HandleForShorCutItem {
             let rootNavigationController = window!.rootViewController as? UINavigationController
             let tabbarController = window!.rootViewController as? UITabBarController
             // if needed pop to root view controller
-            rootNavigationController?.popToRootViewControllerAnimated(false)
+            rootNavigationController?.popToRootViewController(animated: false)
             
             // return tabbarcontroller selected
             switch shorchutItemType {
@@ -98,7 +98,7 @@ extension HandleForShorCutItem {
     }
     
     /// Calls - user selects a Home screen quick action for app
-    func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
+    @objc(application:performActionForShortcutItem:completionHandler:) func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
         // perform action for shortcut item selected
         let handledShortCutItem = QuickActionsForItem(shortcutItem)
         completionHandler(handledShortCutItem)

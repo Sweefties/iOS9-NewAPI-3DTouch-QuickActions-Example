@@ -19,20 +19,20 @@ class SharingViewController: UIViewController {
     }
     
     /// load ShareView
-    @IBAction func ShareView(sender: UIButton) {
+    @IBAction func ShareView(_ sender: UIButton) {
         print("Button Share View was pressed")
         // define constants, array and add objects
         let text = "Fun 3DTouch Quick Action API!"
-        let url = NSURL(string: "https://www.apple.com/")
+        let url = URL(string: "https://www.apple.com/")
         let itemsToShare: NSMutableArray = []
-        itemsToShare.addObject(text)
-        itemsToShare.addObject(url!)
+        itemsToShare.add(text)
+        itemsToShare.add(url!)
         
         // Prepare ActivityController
         let activityController = UIActivityViewController(activityItems: itemsToShare as [AnyObject], applicationActivities:nil)
         
-        presentViewController(activityController, animated: true, completion: nil)
-        if activityController.respondsToSelector("popoverPresentationController") {
+        present(activityController, animated: true, completion: nil)
+        if activityController.responds(to: #selector(getter: UIViewController.popoverPresentationController)) {
             // iOS 8 and later
             let presentationController = activityController.popoverPresentationController
             let v = sender as UIView

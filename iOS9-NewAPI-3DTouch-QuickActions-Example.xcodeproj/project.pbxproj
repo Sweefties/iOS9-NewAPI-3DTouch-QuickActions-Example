@@ -11,10 +11,10 @@
 		7EED383A1BB23EE4006520C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EED38381BB23EE4006520C2 /* Main.storyboard */; };
 		7EED383C1BB23EE4006520C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EED383B1BB23EE4006520C2 /* Assets.xcassets */; };
 		7EED383F1BB23EE4006520C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EED383D1BB23EE4006520C2 /* LaunchScreen.storyboard */; };
-		7EED384B1BB23F5C006520C2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED384A1BB23F5C006520C2 /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7EED384D1BB23F88006520C2 /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED384C1BB23F88006520C2 /* MoviesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7EED384F1BB23FA5006520C2 /* SharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED384E1BB23FA5006520C2 /* SharingViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7EED38511BB23FB9006520C2 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED38501BB23FB9006520C2 /* MessageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7EED384B1BB23F5C006520C2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED384A1BB23F5C006520C2 /* HomeViewController.swift */; };
+		7EED384D1BB23F88006520C2 /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED384C1BB23F88006520C2 /* MoviesTableViewController.swift */; };
+		7EED384F1BB23FA5006520C2 /* SharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED384E1BB23FA5006520C2 /* SharingViewController.swift */; };
+		7EED38511BB23FB9006520C2 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED38501BB23FB9006520C2 /* MessageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,11 +131,12 @@
 		7EED38271BB23EE4006520C2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Sweefties;
 				TargetAttributes = {
 					7EED382E1BB23EE4006520C2 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -218,8 +219,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -263,8 +266,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -283,6 +288,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -296,6 +302,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sweefties.iOS9-NewAPI-3DTouch-QuickActions-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -307,6 +314,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sweefties.iOS9-NewAPI-3DTouch-QuickActions-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
